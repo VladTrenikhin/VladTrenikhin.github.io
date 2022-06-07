@@ -1,0 +1,46 @@
+* {
+    background-color: black;
+}
+
+.header__link {
+    ul{
+        li{
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+.main {
+    &__text{
+        .name{
+            margin-top: 85px;
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .profession{
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 36px;
+            text-align: center;
+            color: #01D5A2;
+        }
+        .location{
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 36px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
