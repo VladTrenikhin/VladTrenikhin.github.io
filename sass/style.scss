@@ -1,11 +1,13 @@
 * {
-    background-color: black;
+    background-color: #040810;
 }
-
-.header__link {
-    ul{
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__link {
+    ul {
         display: flex;
-        li{
+        li {
             font-family: 'Merriweather';
             font-style: normal;
             font-weight: 700;
@@ -15,7 +17,26 @@
             margin-right: 20px;
         }
     }
+    }    
+    &__social {
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                margin-right: 20px;
+                a {
+                    font-family: 'Merriweather';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
+
 
 .portfolio__link {
     display: block;
@@ -35,9 +56,6 @@
         height: 2px;
         background-color: #FFFFFF;
     }
-
-    
-
 }
 
 .main {
