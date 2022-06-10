@@ -1,0 +1,36 @@
+@media (max-width: 1200px){
+    header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .promo__wrapper{
+        padding: 0 50px;
+    }
+    
+}
+
+@media (max-width: 767px){
+    .promo {
+        min-height: 599px;
+        padding: 21px 0 45px 0;
+        &__wrapper{
+            margin-top: 45px;
+            &__header{
+            font-size: 36px;
+            }
+        }
+        &__icons {
+            margin-top: 30px;
+        }
+        .button_main {
+            margin-top: 35px;
+            width: 250px;
+            height: 45px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    
+}
