@@ -51,10 +51,22 @@
     .header__link {
      ul {
          li {
+            margin-right: 15px;
              font-size: 12px;
              }
          }
      }
+     .header__social {
+        ul{
+            li {
+                margin-right: 15px;
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    
  .main__text{
      .name{
          margin-top: 75px;
