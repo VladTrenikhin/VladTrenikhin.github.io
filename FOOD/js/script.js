@@ -300,7 +300,6 @@ axios.get("http://localhost:3000/menu")
 
     slider.style.position = 'relative';
     wrapper.classList.add('carousel-indicators');
-    
 
 
     document.querySelector('.offer__slider').append(wrapper);
@@ -312,11 +311,6 @@ axios.get("http://localhost:3000/menu")
         dot.setAttribute('data-slide-to', i + 1);
         dots.push(dot);
     }
-
-    // slide.forEach(() => {
-        
-    // });
-
 
     const activeDot = document.querySelectorAll('.dot');
 

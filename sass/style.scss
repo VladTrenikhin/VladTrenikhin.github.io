@@ -1,3 +1,5 @@
+
+
 * {
     background-color: #040810;
 }
@@ -37,25 +39,28 @@
     }
 }
 
-
+.container {
+    max-width: 1400px;
+}
 .portfolio__link {
     display: block;
     margin: 0 auto;
-    width: 700px;
+    max-width: 700px;
     margin-top: 30px;
-    .frame {
-        height: 450px;
-        border-radius: 5px;
-    }
+
     &::before {
-        content: '';
-        display: block;
-        margin: 0 auto;
-        margin-top: 55px;
-        width: 140px;
-        height: 2px;
-        background-color: #FFFFFF;
-    }
+            content: '';
+            display: block;
+            margin: 55px auto 20px;
+            width: 140px;
+            height: 2px;
+            background-color: #FFFFFF;
+        }
+
+.portfolio__prev {
+    max-width: 100%;
+}
+    
 }
 
 .main {
@@ -98,3 +103,4 @@
         color: #FFFFFF;
     }
 }
+@import 'media';
