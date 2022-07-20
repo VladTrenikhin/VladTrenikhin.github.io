@@ -97,7 +97,8 @@ window.addEventListener('DOMContentLoaded', function() {
     // Modal
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
-        modal = document.querySelector('.modal');
+          modal = document.querySelector('.modal');
+
 
     modalTrigger.forEach(btn => {
         btn.addEventListener('click', openModal);
@@ -371,7 +372,53 @@ axios.get("http://localhost:3000/menu")
         });
     });
     
+    //calc
+    const gender = document.querySelector('#gender'),
+          culcBtn = gender.querySelectorAll('.calculating__choose-item'),
+          age = document.querySelector('#age'),
+          weight = document.querySelector('#weight'),
+          height = document.querySelector('#height'),
+          activity = document.querySelector('.calculating__choose_big'),
+          activityIndex = activity.querySelectorAll('.calculating__choose-item');
+          calc = document.querySelector('.calculating__result');
+
+    let index = [0, 0, 0, 0],
+        indexOfActiv = [1.2, 1.375, 1.55, 1.725],
+        BMR = 0;
+        result = calc.querySelector('span');
+
+    function activeRemove (e) {
+        e.forEach(item => {
+        item.classList.remove('calculating__choose-item_active');
+        });
+    }
+    activeRemove(culcBtn);
+    activeRemove(activityIndex);
+
+    for (i = 0; i <= 3; i++) {
+        activityIndex[i].setAttribute('num', i);
+    }
+
+    gender.addEventListener('click', (e) => {
+        activeRemove(culcBtn);
+        activeRemove(activityIndex);
+        e.target.classList.add('calculating__choose-item_active');
+        if (e.target.innerText == 'Женщина') {
+            index = [447.6, 13.4, 4.8, 5.7];
+        } else {
+            index = [88.36, 9.2, 3.1, 4.3];
+        }
+        result.innerHTML = `<span>0</span>`;
+        
+    });
     
+    activity.addEventListener('click', (event) => {
+        activeRemove(activityIndex);
+        event.target.classList.add('calculating__choose-item_active');
+        let n = event.target.getAttribute('num');
+        BMR = Math.round((index[0] + index[1] * weight.value + index[2] * height.value - index[3] * age.value) * indexOfActiv[n]);
+        result.innerHTML = `<span>${BMR}</span>`;
+    });
 
 });
 

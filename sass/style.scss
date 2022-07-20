@@ -17,12 +17,14 @@
             color: #FFFFFF;
             list-style: none;
             margin-right: 20px;
+            text-decoration: none;
         }
     }
     }    
     &__social {
         ul {
             display: flex;
+            padding: 0;
             li {
                 list-style: none;
                 margin-right: 20px;
@@ -46,7 +48,7 @@
 .portfolio__link {
     display: block;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1400px;
     margin-top: 30px;
     &::before {
             content: '';
@@ -58,7 +60,9 @@
         }
 
 .portfolio__prev {
-    max-width: 100%;
+    max-width: 80%;
+    padding: 0 10%;
+    border-radius: 10px;
 }
     
 }
@@ -103,6 +107,23 @@
         }
     }
 
+}
+
+.about {
+    margin-top: 85px;
+    color: #FFFFFF;
+    text-align: center;
+    &__header {
+        font-family: 'Merriweather';
+        font-size: 36px;
+        font-weight: 300;
+    }
+    &__text {
+        max-width: 80%;
+        margin: 0 10%;
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
 .portfolio{
