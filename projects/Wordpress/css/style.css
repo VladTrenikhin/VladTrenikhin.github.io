@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Roboto';
+    font-style: normal;
+}
+.conteiner{
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo{
+    height: 800px;
+    background: url('../img/main_bg.jpg') center center/cover no-repeat;
+    padding: 39px 0 62px 0;
+
+}
+
+.logo .logo_img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo_text{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 14px;
+}
+
+h1{
+    margin-top: 53px;
+}
+
+h2.title{
+    margin-top: 21px;
+}
+
+.title {
+font-style: normal;
+font-weight: 900;
+font-size: 41px;
+line-height: 41px;
+text-align: center;
+text-transform: uppercase;
+color: #F9BF3B;
+}
+
+.simple .title_big{
+font-style: normal;
+font-weight: 900;
+font-size: 80px;
+line-height: 80px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-top: 21px;
+}
+.promo .promo_text{
+font-weight: 300;
+font-size: 21px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 25px;
+align-items: center;
+}
+
+.promo .promo_text span{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F9BF3B;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 72px auto;
+    width: 313px;
+height: 72px;
+background-image: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%);
+box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+border: 4px solid rgba(0, 0, 0, 0.23);
+font-family: 'RobotoCondensed';
+font-size: 21px;
+line-height: 24px;
+color: #FFFFFF;
+text-transform: uppercase;
+}
+
+.promo .more .more_text {
+font-style: normal;
+font-weight: 100;
+font-size: 15px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.promo .more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.waiting{
+    min-height: 604px;
+    background: #EFEFEF;
+    padding: 85px 0 75px 0;
+}
+
+.waiting .waiting_header, .finish .finish_header{
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+text-align: center;
+text-transform: uppercase;
+color: #252525;
+}  
+
+.waiting .waiting_divider, .finish .finish_divider{
+width: 220px;
+height: 4px;
+background: #F9BF3B;
+margin: 0 auto;
+margin-top: 18px;
+}
+
+.waiting .waiting_subheader{
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+text-align: center;
+color: #4A4A4A;
+margin-top: 19px;
+}
+
+.waiting .waiting_wrapper{
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-between;
+}
+
+.waiting .waiting_wrapper .waiting_item{
+
+    width: 339px;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img{
+    width: 100%;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_descr{
+    margin-top: 30px;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 21px;
+text-align: center;
+color: #4A4A4A;
+}
+
+.optimization{
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization_header{
+        margin-left: 391px;
+        font-weight: 400;
+        font-size: 29px;
+        color: rgb(41, 156, 189);
+        text-transform: uppercase;
+       
+      }
+      .optimization .optimization_text{
+        margin-left: 391px;
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 27px;
+        color: #4A4A4A;
+      }
+      .optimization .optimization_text span{
+        font-weight: 700;
+      }
+
+      .optimization .optimization_img{
+          position: absolute;
+          top: -54px;
+        left: -240px;
+        z-index: -1;
+      }
+
+      .finish{
+          min-height: 447px;
+          padding: 86px 0 79px 0;
+          background: url('../img/second_bg.jpg') center center/cover no-repeat;
+      }
+
+      .finish .finish_header{
+          color: #FFFFFF;
+      }
+
+      .finish .finish_wrapper{
+          margin-top: 41px;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .finish .finish_wrapper .finish_item{
+          width: 204px;
+      }
+
+      .finish .finish_wrapper .finish_round{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 115px;
+        height: 115px;
+        background: #B4E2FF;
+        border-radius: 100%;
+
+      }
+
+      .finish .finish_wrapper .finish_item .finish_descr{
+            margin-top: 25px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            color: #EFEFEF;
+      }
+
+      .gift{
+        min-height: 631px;
+        padding: 88px 0 88px 0;
+        background: #EFEFEF;
+      }
+
+      .gift .gift_img{
+          display: block;
+          margin: 0 auto;
+      }
+
+      .gift .gift_text{
+          margin-top: 45px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 43px;
+            text-align: center;
+            color: #252525;
+      }
+
+      .gift .gift_buttom{
+          display: block;
+          margin: 0 auto;
+        margin-top: 50px;
+        background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        width: 313px;
+        height: 72px;
+        font-family: 'RobotoCondensed';
+        font-size: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      .webinar{
+          min-height: 510px;
+          padding: 90px 0 50px 0;
+      }
+
+      .webinar .webinar_img{
+          display: block;
+          margin: 0 auto;
+      }
+
+      .webinar .web_text1{
+          margin-top: 36px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #252525;
+      }
+
+      .webinar .web_text2{
+          margin-top: 30px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #299CBD;
+      }
+
+      .webinar .web_text3{
+          margin-top: 25px;
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+text-align: center;
+color: #4A4A4A;
+      }
+
+      footer{
+          height: 169px;
+          padding: 57px 0 69px 0;
+          background: #1A1A1A;
+      }
+
+      footer a{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        color: #888888;
+      }
+
+      .number{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        color: #888888;
+      }
+    
